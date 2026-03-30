@@ -8,10 +8,25 @@
 		"cta": "Get Started"
 	},
 	"hero": {
+		"banner": "Secure Cloud Storage at Your Fingertips",
 		"title": "Your Files, Securely in the Cloud",
 		"subtitle": "Experience seamless file management with 20GB of free storage. Share files effortlessly with permission control.",
 		"cta": "Get Started",
-		"secondaryCta": "Learn More"
+		"secondaryCta": "Learn More",
+		"stats": {
+			"storage": {
+				"title": "20GB",
+				"subtitle": "Free Storage"
+			},
+			"security": {
+				"title": "End-to-End",
+				"subtitle": "Encrypted"
+			},
+			"sync": {
+				"title": "Real-time",
+				"subtitle": "Sync"
+			}
+		}
 	},
 	"features": {
 		"title": "Powerful Features",
@@ -46,7 +61,7 @@
 		"subtitle": "Three simple steps to get started",
 		"step1": {
 			"title": "Sign Up",
-			"description": "Create your account with just your email and phone number."
+			"description": "Sign up quickly using your phone number."
 		},
 		"step2": {
 			"title": "Upload Files",
@@ -64,7 +79,7 @@
 			"name": "Free",
 			"price": "$0",
 			"storage": "20GB",
-			"features": ["20GB storage", "Email & phone sharing", "Basic support"]
+			"features": ["20GB storage", "Phone sharing", "Basic support"]
 		},
 		"pro": {
 			"name": "Pro",
@@ -107,7 +122,7 @@
 	},
 	"contact": {
 		"title": "Get in Touch",
-		"subtitle": "We&apos;d love to hear from you",
+		"subtitle": "We love to hear from you",
 		"email": "Email",
 		"subject": "Subject",
 		"message": "Message",
@@ -117,6 +132,9 @@
 		"error": "Failed to send message. Please try again."
 	},
 	"footer": {
+		"allRights": "All rights reserved.",
+		"developmentBy": "Development by:",
+		"description": "Secure cloud storage with intelligent permission control and real-time collaboration.",
 		"product": "Product",
 		"features": "Features",
 		"pricing": "Pricing",

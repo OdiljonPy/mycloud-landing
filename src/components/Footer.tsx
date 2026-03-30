@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { CloudIcon, Github, Linkedin, Twitter } from 'lucide-react'
+import { CloudIcon, GithubIcon, LinkedinIcon, TwitterIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
@@ -24,9 +24,9 @@ export default function Footer() {
 	]
 
 	const socialLinks = [
-		{ icon: Github, label: 'GitHub', href: '#' },
-		{ icon: Twitter, label: 'Twitter', href: '#' },
-		{ icon: Linkedin, label: 'LinkedIn', href: '#' },
+		{ icon: GithubIcon, label: 'GitHub', href: '#' },
+		{ icon: TwitterIcon, label: 'Twitter', href: '#' },
+		{ icon: LinkedinIcon, label: 'LinkedIn', href: '#' },
 	]
 
 	const containerVariants = {
@@ -72,8 +72,7 @@ export default function Footer() {
 							</span>
 						</Link>
 						<p className='text-sm text-muted-foreground leading-relaxed'>
-							Secure cloud storage with intelligent permission control and
-							real-time collaboration.
+							{t('footer.description')}
 						</p>
 						{/* Social Links */}
 						<div className='flex gap-4 pt-2'>
@@ -134,10 +133,10 @@ export default function Footer() {
 							<span className='hover:text-primary text-lg font-semibold transition-colors'>
 								Bulutcha.
 							</span>{' '}
-							All rights reserved.
+							{t('footer.allRights')}
 						</p>
 						<div className=' gap-2 font-semibold text-muted-foreground hover:text-primary transition-colors flex items-end'>
-							Development by:
+							{t('footer.developmentBy')}
 							<a href='https://zerodev.uz' className='text-xl' target='_blank'>
 								ZERODEV LLC
 							</a>

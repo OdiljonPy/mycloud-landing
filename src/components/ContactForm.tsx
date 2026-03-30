@@ -82,7 +82,7 @@ export default function ContactForm() {
                 {t('contact.success')}
               </h3>
               <p className="text-muted-foreground">
-                We&apos;ll get back to you shortly!
+                We will get back to you shortly!
               </p>
             </motion.div>
           ) : (

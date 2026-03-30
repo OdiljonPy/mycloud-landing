@@ -2,11 +2,11 @@
 
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, SparklesIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 export default function Hero() {
-	const t = useTranslations()
+	const t = useTranslations('hero')
 
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -35,7 +35,7 @@ export default function Hero() {
 			<div className='absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10' />
 			<div className='absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10' />
 
-			<div className='max-w-4xl mx-auto w-full'>
+			<div className='max-w-5xl mx-auto w-full'>
 				<motion.div
 					variants={containerVariants}
 					initial='hidden'
@@ -45,8 +45,9 @@ export default function Hero() {
 					{/* Badge */}
 					<motion.div variants={itemVariants}>
 						<div className='inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full'>
-							<span className='text-sm font-medium text-primary'>
-								✨ Secure Cloud Storage at Your Fingertips
+							<span className='text-sm flex items-center gap-1 font-medium text-primary'>
+								<SparklesIcon size={14} />
+								{t('banner')}
 							</span>
 						</div>
 					</motion.div>
@@ -57,7 +58,7 @@ export default function Hero() {
 						className='text-5xl sm:text-6xl lg:text-7xl font-bold text-balance'
 					>
 						<span className='bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent'>
-							{t('hero.title')}
+							{t('title')}
 						</span>
 					</motion.h1>
 
@@ -66,7 +67,7 @@ export default function Hero() {
 						variants={itemVariants}
 						className='text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-balance'
 					>
-						{t('hero.subtitle')}
+						{t('subtitle')}
 					</motion.p>
 
 					{/* CTA Buttons */}
@@ -79,7 +80,7 @@ export default function Hero() {
 								size='lg'
 								className='bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base gap-2 w-full sm:w-auto'
 							>
-								{t('hero.cta')}
+								{t('cta')}
 								<ArrowRight className='w-5 h-5' />
 							</Button>
 						</a>
@@ -88,30 +89,30 @@ export default function Hero() {
 					{/* Stats */}
 					<motion.div
 						variants={itemVariants}
-						className='grid md:grid-cols-3 gap-4 sm:gap-8 pt-8 max-w-2xl mx-auto'
+						className='grid md:grid-cols-3 gap-4 sm:gap-8 pt-8 '
 					>
 						<div className='space-y-1'>
 							<div className='text-2xl sm:text-3xl font-bold text-primary'>
-								20GB
+								{t('stats.storage.title')}
 							</div>
 							<div className='text-xs sm:text-sm text-muted-foreground'>
-								Free Storage
+								{t('stats.storage.subtitle')}
 							</div>
 						</div>
 						<div className='space-y-1'>
 							<div className='text-2xl sm:text-3xl font-bold text-primary'>
-								End-to-End
+								{t('stats.security.title')}
 							</div>
 							<div className='text-xs sm:text-sm text-muted-foreground'>
-								Encrypted
+								{t('stats.security.subtitle')}
 							</div>
 						</div>
 						<div className='space-y-1'>
 							<div className='text-2xl sm:text-3xl font-bold text-primary'>
-								Real-time
+								{t('stats.sync.title')}
 							</div>
 							<div className='text-xs sm:text-sm text-muted-foreground'>
-								Sync
+								{t('stats.sync.subtitle')}
 							</div>
 						</div>
 					</motion.div>
