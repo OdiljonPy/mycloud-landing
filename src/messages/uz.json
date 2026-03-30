@@ -115,14 +115,22 @@
 		"title": "Aqlli ruxsat boshqaruvi",
 		"subtitle": "Fayllarni o‘zingiz xohlagan tarzda ulashing",
 		"description": "Foydalanuvchilar fayllar bilan nima qila olishini to‘liq nazorat qiling: yuklab olishni cheklang, amal qilish muddatini belgilang va istalgan payt ruxsatni bekor qiling.",
-		"features": [
-			"Faqat ko‘rish",
-			"Tahrirlash ruxsati",
-			"Yuklab olishni cheklash",
-			"Amal qilish muddati",
-			"Parol bilan himoya",
-			"Faollik tarixi"
-		]
+		"features": {
+			"view_only": "Faqat ko'rish huquqi",
+			"edit_permissions": "Tahrirlash ruxsatnomalari",
+			"download_controls": "Yuklab olishni boshqarish",
+			"expiration_dates": "Amal qilish muddati",
+			"password_protection": "Parol bilan himoyalash",
+			"activity_tracking": "Harakatlar tarixi"
+		},
+		"document": {
+			"sharedWith": "John bilan ulashilgan",
+			"viewOnly": "Faqat ko‘rish huquqi",
+			"expires": "7 kundan keyin muddati tugaydi",
+			"password": "Parol bilan himoyalangan",
+			"lastAccessed": "Oxirgi kirish 2 soat oldin",
+			"secureBadge": "100% Xavfsiz"
+		}
 	},
 	"contact": {
 		"title": "Biz bilan bog‘laning",
@@ -133,7 +141,18 @@
 		"send": "Yuborish",
 		"sending": "Yuborilmoqda...",
 		"success": "Xabar muvaffaqiyatli yuborildi!",
-		"error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring."
+		"error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
+		"success_message": "Tez orada siz bilan bog'lanamiz!",
+		"placeholders": {
+			"email": "siz@misol.uz",
+			"subject": "Sizga qanday yordam bera olamiz?",
+			"message": "Batafsilroq yozing..."
+		},
+		"validation": {
+			"email": "Yaroqsiz email manzili",
+			"subject": "Mavzu kamida 3 ta belgidan iborat bo'lishi kerak",
+			"message": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak"
+		}
 	},
 	"footer": {
 		"allRights": "Barcha huquqlar himoyalangan.",

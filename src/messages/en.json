@@ -111,14 +111,22 @@
 		"title": "Smart Permission Control",
 		"subtitle": "Share files your way with granular permission settings",
 		"description": "Control exactly what your collaborators can do with shared files. Set expiration dates, limit downloads, and revoke access instantly.",
-		"features": [
-			"View-only access",
-			"Edit permissions",
-			"Download controls",
-			"Expiration dates",
-			"Password protection",
-			"Activity tracking"
-		]
+		"features": {
+			"view_only": "View-only access",
+			"edit_permissions": "Edit permissions",
+			"download_controls": "Download controls",
+			"expiration_dates": "Expiration dates",
+			"password_protection": "Password protection",
+			"activity_tracking": "Activity tracking"
+		},
+		"document": {
+			"sharedWith": "Shared with John",
+			"viewOnly": "View-only access",
+			"expires": "Expires in 7 days",
+			"password": "Password protected",
+			"lastAccessed": "Last accessed 2 hours ago",
+			"secureBadge": "100% Secure"
+		}
 	},
 	"contact": {
 		"title": "Get in Touch",
@@ -129,7 +137,18 @@
 		"send": "Send Message",
 		"sending": "Sending...",
 		"success": "Message sent successfully!",
-		"error": "Failed to send message. Please try again."
+		"error": "Failed to send message. Please try again.",
+		"success_message": "We will get back to you shortly!",
+		"placeholders": {
+			"email": "you@example.com",
+			"subject": "How can we help?",
+			"message": "Tell us more..."
+		},
+		"validation": {
+			"email": "Invalid email address",
+			"subject": "Subject must be at least 3 characters",
+			"message": "Message must be at least 10 characters"
+		}
 	},
 	"footer": {
 		"allRights": "All rights reserved.",

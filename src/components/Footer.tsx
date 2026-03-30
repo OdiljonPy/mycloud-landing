@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { CloudIcon, GithubIcon, LinkedinIcon, TwitterIcon } from 'lucide-react'
+import { CloudIcon, InstagramIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
@@ -11,22 +11,52 @@ export default function Footer() {
 	const footerSections = [
 		{
 			title: 'footer.product',
-			links: ['features', 'pricing', 'permissions'],
+			links: [
+				{
+					name: 'features',
+					link: '#features',
+				},
+				{
+					name: 'pricing',
+					link: '#pricing',
+				},
+				{ name: 'permissions', link: '#permissions' },
+			],
 		},
 		{
 			title: 'footer.company',
-			links: ['about', 'careers'],
+			links: [
+				{
+					name: 'about',
+					link: 'https://zerodev.uz/about',
+				},
+				{
+					name: 'careers',
+					link: 'https://zerodev.uz/career',
+				},
+			],
 		},
 		{
 			title: 'footer.support',
-			links: ['help', 'contact'],
+			links: [
+				{
+					name: 'help',
+					link: 'tel:+998995071121',
+				},
+				{
+					name: 'contact',
+					link: '#contact',
+				},
+			],
 		},
 	]
 
 	const socialLinks = [
-		{ icon: GithubIcon, label: 'GitHub', href: '#' },
-		{ icon: TwitterIcon, label: 'Twitter', href: '#' },
-		{ icon: LinkedinIcon, label: 'LinkedIn', href: '#' },
+		{
+			icon: InstagramIcon,
+			label: 'Instagram',
+			href: 'https://www.instagram.com/zerodev.uz',
+		},
 	]
 
 	const containerVariants = {
@@ -82,6 +112,7 @@ export default function Footer() {
 									<motion.a
 										key={social.label}
 										href={social.href}
+										target='_blank'
 										whileHover={{ y: -3 }}
 										className='w-10 h-10 rounded-lg bg-muted hover:bg-primary/10 flex items-center justify-center text-foreground hover:text-primary transition-colors'
 										aria-label={social.label}
@@ -105,13 +136,23 @@ export default function Footer() {
 							</h4>
 							<ul className='space-y-2'>
 								{section.links.map(link => (
-									<li key={link}>
-										<Link
-											href={`#${link}`}
-											className='text-sm text-muted-foreground hover:text-primary transition-colors'
-										>
-											{t(`footer.${link}`)}
-										</Link>
+									<li key={link.name}>
+										{link.link.includes('#') ? (
+											<Link
+												href={link.link}
+												className='text-sm text-muted-foreground hover:text-primary transition-colors'
+											>
+												{t(`footer.${link.name}`)}
+											</Link>
+										) : (
+											<a
+												className='text-sm text-muted-foreground hover:text-primary transition-colors'
+												href={link.link}
+												target='_blank'
+											>
+												{t(`footer.${link.name}`)}
+											</a>
+										)}
 									</li>
 								))}
 							</ul>
@@ -129,7 +170,7 @@ export default function Footer() {
 				>
 					<div className='flex flex-col sm:flex-row justify-between items-center gap-4'>
 						<p className='text-sm text-muted-foreground'>
-							@{2026}{' '}
+							@{year}{' '}
 							<span className='hover:text-primary text-lg font-semibold transition-colors'>
 								Bulutcha.
 							</span>{' '}

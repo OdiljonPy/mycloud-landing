@@ -39,7 +39,7 @@ export default function LanguageSwitcher() {
           </span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent className='space-y-0.5' align="end">
         {locales.map((lang) => (
           <DropdownMenuItem
             key={lang}
