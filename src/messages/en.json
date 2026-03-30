@@ -1,125 +1,135 @@
 {
-  "nav": {
-    "home": "Home",
-    "features": "Features",
-    "pricing": "Pricing",
-    "permissions": "Permissions",
-    "contact": "Contact",
-    "cta": "Get Started"
-  },
-  "hero": {
-    "title": "Your Files, Securely in the Cloud",
-    "subtitle": "Experience seamless file management with 100GB of free storage. Share files effortlessly with permission control.",
-    "cta": "Start Free",
-    "secondaryCta": "Learn More"
-  },
-  "features": {
-    "title": "Powerful Features",
-    "subtitle": "Everything you need for seamless file management",
-    "storage": {
-      "title": "100GB Free Storage",
-      "description": "Get started with generous free storage for all your important files and documents."
-    },
-    "sharing": {
-      "title": "Easy Sharing",
-      "description": "Share files with just a phone number. Complete control over who can access what."
-    },
-    "security": {
-      "title": "Enterprise Security",
-      "description": "End-to-end encryption keeps your files safe and secure at all times."
-    },
-    "sync": {
-      "title": "Real-time Sync",
-      "description": "Your files stay in sync across all your devices automatically."
-    },
-    "collab": {
-      "title": "Collaboration",
-      "description": "Work together seamlessly with real-time collaboration features."
-    },
-    "mobile": {
-      "title": "Mobile First",
-      "description": "Access your files anytime, anywhere from any device."
-    }
-  },
-  "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Three simple steps to get started",
-    "step1": {
-      "title": "Sign Up",
-      "description": "Create your account with just your email and phone number."
-    },
-    "step2": {
-      "title": "Upload Files",
-      "description": "Drag and drop files or use the upload button to add your content."
-    },
-    "step3": {
-      "title": "Share & Collaborate",
-      "description": "Share files by phone number and collaborate with your team."
-    }
-  },
-  "pricing": {
-    "title": "Simple, Transparent Pricing",
-    "subtitle": "Choose the plan that fits your needs",
-    "free": {
-      "name": "Free",
-      "price": "$0",
-      "storage": "100GB",
-      "features": ["100GB storage", "Email & phone sharing", "Basic support"]
-    },
-    "pro": {
-      "name": "Pro",
-      "price": "$9.99",
-      "period": "per month",
-      "storage": "2TB",
-      "features": ["2TB storage", "Advanced sharing", "Priority support", "Version history"]
-    },
-    "business": {
-      "name": "Business",
-      "price": "$24.99",
-      "period": "per month",
-      "storage": "Unlimited",
-      "features": ["Unlimited storage", "Team management", "Admin console", "24/7 support"]
-    },
-    "cta": "Choose Plan"
-  },
-  "permissions": {
-    "title": "Smart Permission Control",
-    "subtitle": "Share files your way with granular permission settings",
-    "description": "Control exactly what your collaborators can do with shared files. Set expiration dates, limit downloads, and revoke access instantly.",
-    "features": [
-      "View-only access",
-      "Edit permissions",
-      "Download controls",
-      "Expiration dates",
-      "Password protection",
-      "Activity tracking"
-    ]
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We&apos;d love to hear from you",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message",
-    "send": "Send Message",
-    "sending": "Sending...",
-    "success": "Message sent successfully!",
-    "error": "Failed to send message. Please try again."
-  },
-  "footer": {
-    "product": "Product",
-    "features": "Features",
-    "pricing": "Pricing",
-    "security": "Security",
-    "company": "Company",
-    "about": "About",
-    "blog": "Blog",
-    "careers": "Careers",
-    "support": "Support",
-    "help": "Help Center",
-    "contact": "Contact",
-    "terms": "Terms",
-    "privacy": "Privacy Policy",
-    "copyright": "© 2024 Cloud. All rights reserved."
-  }
+	"nav": {
+		"home": "Home",
+		"features": "Features",
+		"pricing": "Pricing",
+		"permissions": "Permissions",
+		"contact": "Contact",
+		"cta": "Get Started"
+	},
+	"hero": {
+		"title": "Your Files, Securely in the Cloud",
+		"subtitle": "Experience seamless file management with 20GB of free storage. Share files effortlessly with permission control.",
+		"cta": "Get Started",
+		"secondaryCta": "Learn More"
+	},
+	"features": {
+		"title": "Powerful Features",
+		"subtitle": "Everything you need for seamless file management",
+		"storage": {
+			"title": "20GB Free Storage",
+			"description": "Get started with generous free storage for all your important files and documents."
+		},
+		"sharing": {
+			"title": "Easy Sharing",
+			"description": "Share files with just a phone number. Complete control over who can access what."
+		},
+		"security": {
+			"title": "Enterprise Security",
+			"description": "End-to-end encryption keeps your files safe and secure at all times."
+		},
+		"sync": {
+			"title": "Real-time Sync",
+			"description": "Your files stay in sync across all your devices automatically."
+		},
+		"collab": {
+			"title": "Collaboration",
+			"description": "Work together seamlessly with real-time collaboration features."
+		},
+		"mobile": {
+			"title": "Mobile First",
+			"description": "Access your files anytime, anywhere from any device."
+		}
+	},
+	"howItWorks": {
+		"title": "How It Works",
+		"subtitle": "Three simple steps to get started",
+		"step1": {
+			"title": "Sign Up",
+			"description": "Create your account with just your email and phone number."
+		},
+		"step2": {
+			"title": "Upload Files",
+			"description": "Drag and drop files or use the upload button to add your content."
+		},
+		"step3": {
+			"title": "Share & Collaborate",
+			"description": "Share files by phone number and collaborate with your team."
+		}
+	},
+	"pricing": {
+		"title": "Simple, Transparent Pricing",
+		"subtitle": "Choose the plan that fits your needs",
+		"free": {
+			"name": "Free",
+			"price": "$0",
+			"storage": "20GB",
+			"features": ["20GB storage", "Email & phone sharing", "Basic support"]
+		},
+		"pro": {
+			"name": "Pro",
+			"price": "$9.99",
+			"period": "per month",
+			"storage": "2TB",
+			"features": [
+				"2TB storage",
+				"Advanced sharing",
+				"Priority support",
+				"Version history"
+			]
+		},
+		"business": {
+			"name": "Business",
+			"price": "$24.99",
+			"period": "per month",
+			"storage": "Unlimited",
+			"features": [
+				"Unlimited storage",
+				"Team management",
+				"Admin console",
+				"24/7 support"
+			]
+		},
+		"cta": "Choose Plan"
+	},
+	"permissions": {
+		"title": "Smart Permission Control",
+		"subtitle": "Share files your way with granular permission settings",
+		"description": "Control exactly what your collaborators can do with shared files. Set expiration dates, limit downloads, and revoke access instantly.",
+		"features": [
+			"View-only access",
+			"Edit permissions",
+			"Download controls",
+			"Expiration dates",
+			"Password protection",
+			"Activity tracking"
+		]
+	},
+	"contact": {
+		"title": "Get in Touch",
+		"subtitle": "We&apos;d love to hear from you",
+		"email": "Email",
+		"subject": "Subject",
+		"message": "Message",
+		"send": "Send Message",
+		"sending": "Sending...",
+		"success": "Message sent successfully!",
+		"error": "Failed to send message. Please try again."
+	},
+	"footer": {
+		"product": "Product",
+		"features": "Features",
+		"pricing": "Pricing",
+		"permissions": "Permissions",
+		"company": "Company",
+		"about": "About",
+		"blog": "Blog",
+		"careers": "Careers",
+		"support": "Support",
+		"help": "Help Center",
+		"contact": "Contact",
+		"terms": "Terms",
+		"privacy": "Privacy Policy",
+		"copyright": "© 2024 Cloud. All rights reserved."
+	}
 }

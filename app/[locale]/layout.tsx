@@ -25,11 +25,11 @@ export async function generateMetadata(
       template: '%s | Cloud',
     },
     description:
-      'Experience seamless file management with 100GB free storage and advanced permission controls.',
+      'Experience seamless file management with 20GB free storage and advanced permission controls.',
     openGraph: {
       title: 'Cloud - Secure File Management',
       description:
-        'Experience seamless file management with 100GB free storage and advanced permission controls.',
+        'Experience seamless file management with 20GB free storage and advanced permission controls.',
       locale,
       type: 'website',
     },

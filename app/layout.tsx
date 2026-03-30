@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Cloud - Secure File Management',
   description:
-    'Experience seamless file management with 100GB free storage and advanced permission controls.',
+    'Experience seamless file management with 20GB free storage and advanced permission controls.',
   generator: 'v0.app',
   icons: {
     icon: [
