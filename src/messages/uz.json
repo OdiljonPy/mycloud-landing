@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Bosh Sahifa",
+    "features": "Xususiyatlar",
+    "pricing": "Narxlar",
+    "permissions": "Ruxsatnomalar",
+    "contact": "Aloqa",
+    "cta": "Boshlash"
+  },
+  "hero": {
+    "title": "Sizning Fayllaringiz, Bulutda Xavfsiz",
+    "subtitle": "100GB bepul saqlash joyiga ega fayl boshqaruvini tajribab oʻtkazuni. Faylllarni osongina ruxsat nazorati bilan baham koʻring.",
+    "cta": "Bepul Boshlash",
+    "secondaryCta": "Koʻproq Oʻrganing"
+  },
+  "features": {
+    "title": "Kuchli Xususiyatlar",
+    "subtitle": "Fayl boshqaruviga kerak boʻlgan hammasini",
+    "storage": {
+      "title": "100GB Bepul Saqlash",
+      "description": "Barcha muhim fayllar va hujjatlar uchun keng bepul saqlash joyi bilan boshlang."
+    },
+    "sharing": {
+      "title": "Oson Baham Koʻrish",
+      "description": "Faylllarni telefon raqami bilan baham koʻring. Kishiga kishiga ruxsat nazorati."
+    },
+    "security": {
+      "title": "Enterprise Xavfsizlik",
+      "description": "Oʻtqazib oʻtadigan shifrlash sizning fayllaringizni har doim xavfsiz saqlaydi."
+    },
+    "sync": {
+      "title": "Real Vaqtda Sinxronizatsiya",
+      "description": "Sizning fayllaringiz barcha qurilmalaringizda avtomatik sinxronizatsiya boʻlib turadi."
+    },
+    "collab": {
+      "title": "Hamkorlik",
+      "description": "Real vaqtda hamkorlik xususiyatlari bilan birga ishlang."
+    },
+    "mobile": {
+      "title": "Mobil Avval",
+      "description": "Istalgan qurilmadan istalgan joyda fayllaringizga kirish."
+    }
+  },
+  "howItWorks": {
+    "title": "Qanday Ishlaydi",
+    "subtitle": "Boshlash uchun uchta oddiy qadam",
+    "step1": {
+      "title": "Roʻyxatdan Oʻtish",
+      "description": "Emailingiz va telefon raqamingiz bilan akkaunt yarating."
+    },
+    "step2": {
+      "title": "Fayllarni Yuklash",
+      "description": "Fayllarni sudrab oʻtkazuni yoki kontentni qoʻshish uchun yuklash tugmasini ishlating."
+    },
+    "step3": {
+      "title": "Baham Koʻrish va Hamkorlik",
+      "description": "Faylllarni telefon raqami bilan baham koʻring va jamangiz bilan hamkorlik qiling."
+    }
+  },
+  "pricing": {
+    "title": "Oddiy, Shaffof Narx",
+    "subtitle": "Sizga mos keladigan rejani tanlang",
+    "free": {
+      "name": "Bepul",
+      "price": "0 so'm",
+      "storage": "100GB",
+      "features": ["100GB saqlash", "Email va telefon bilan baham koʻrish", "Asosiy qoʻllab-quvvatlash"]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "9,99$",
+      "period": "oyiga",
+      "storage": "2TB",
+      "features": ["2TB saqlash", "Ilgʻor baham koʻrish", "Ustun qoʻllab-quvvatlash", "Versiya tarixi"]
+    },
+    "business": {
+      "name": "Biznes",
+      "price": "24,99$",
+      "period": "oyiga",
+      "storage": "Cheksiz",
+      "features": ["Cheksiz saqlash", "Jamani boshqarish", "Admin konsol", "24/7 qoʻllab-quvvatlash"]
+    },
+    "cta": "Rejani Tanlash"
+  },
+  "permissions": {
+    "title": "Aqlli Ruxsat Nazorati",
+    "subtitle": "Granular ruxsat sozlamalari bilan faylllarni oʻz tarzingizda baham koʻring",
+    "description": "Hamkorlaringiz baham koʻrilgan faylllar bilan nima qila olishi kerakligini aniq nazorat qiling. Tugash sanalarini oʻrnating, yuklovchilarni cheklang va darhol kirish ruxsatini bekor qiling.",
+    "features": [
+      "Faqat koʻrish huquqi",
+      "Tahrir ruxsatlari",
+      "Yuklash nazorati",
+      "Tugash sanalari",
+      "Parol himoyasi",
+      "Faoliyat kuzatish"
+    ]
+  },
+  "contact": {
+    "title": "Biz Bilan Aloqaga Chiqing",
+    "subtitle": "Biz sizni tingishni xohlaymiz",
+    "email": "Email",
+    "subject": "Mavzu",
+    "message": "Xabar",
+    "send": "Xabarni Yuborish",
+    "sending": "Yuborish...",
+    "success": "Xabar muvaffaqiyatli yuborildi!",
+    "error": "Xabarni yuborishda xatolik. Iltimos, qayta urinib koʻring."
+  },
+  "footer": {
+    "product": "Mahsulot",
+    "features": "Xususiyatlar",
+    "pricing": "Narxlar",
+    "security": "Xavfsizlik",
+    "company": "Kompaniya",
+    "about": "Haqida",
+    "blog": "Blog",
+    "careers": "Martaba",
+    "support": "Qoʻllab-quvvatlash",
+    "help": "Yordam Markazi",
+    "contact": "Aloqa",
+    "terms": "Shartlar",
+    "privacy": "Maxfiylik Siyosati",
+    "copyright": "© 2024 Cloud. Barcha huquqlar himoyalangan."
+  }
+}
