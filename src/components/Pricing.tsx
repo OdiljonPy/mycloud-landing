@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { PricingTabs } from './PricingTabs'
 
 export default function Pricing() {
 	const t = useTranslations()
@@ -47,7 +48,7 @@ export default function Pricing() {
 						{t('pricing.subtitle')}
 					</p>
 				</motion.div>
-
+				<PricingTabs />
 				<motion.div
 					variants={containerVariants}
 					initial='hidden'

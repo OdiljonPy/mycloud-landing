@@ -1,4 +1,40 @@
 {
+	"meta": {
+		"title": {
+			"default": "Bulutcha — Secure File Storage in the Cloud",
+			"template": "%s | Bulutcha"
+		},
+		"description": "Bulutcha — a convenient platform for storing your files in the cloud, sharing photos and videos. 20 GB free storage. Grant access via phone number.",
+		"keywords": [
+			"cloud storage",
+			"file storage",
+			"bulutcha",
+			"google drive alternative",
+			"photo storage",
+			"video storage",
+			"online disk",
+			"uzbekistan cloud",
+			"share via phone number",
+			"secure file sharing"
+		],
+		"openGraph": {
+			"title": "Bulutcha — Secure File Storage in the Cloud",
+			"description": "Store your files in the cloud and share them with friends via phone number. 20 GB free.",
+			"images": {
+				"alt": "Bulutcha — Cloud File Storage Service"
+			}
+		},
+		"twitter": {
+			"title": "Bulutcha — Secure File Storage in the Cloud",
+			"description": "Store your files in the cloud and share via phone number. 20 GB free storage."
+		},
+		"schema": {
+			"description": "Cloud file storage and sharing service via phone number",
+			"offers": {
+				"description": "20 GB free storage space"
+			}
+		}
+	},
 	"nav": {
 		"home": "Home",
 		"features": "Features",
@@ -72,6 +108,7 @@
 			"description": "Share files by phone number and collaborate with your team."
 		}
 	},
+	"mostPopular": "Most Popular",
 	"pricing": {
 		"title": "Simple, Transparent Pricing",
 		"subtitle": "Choose the plan that fits your needs",

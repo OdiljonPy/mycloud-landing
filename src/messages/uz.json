@@ -1,4 +1,40 @@
 {
+	"meta": {
+		"title": {
+			"default": "Bulutcha — Bulutchadagi Xavfsiz Fayl Saqlash",
+			"template": "%s | Bulutcha"
+		},
+		"description": "Bulutcha — fayllaringizni bulutda saqlash, rasm va videolarni ulashish uchun qulay platforma. 20 GB bepul joy. Telefon raqam orqali ruxsat bering.",
+		"keywords": [
+			"bulut saqlash",
+			"fayl saqlash",
+			"bulutcha",
+			"google drive alternativa",
+			"rasm saqlash",
+			"video saqlash",
+			"online disk",
+			"o'zbekiston cloud",
+			"telefon raqam bilan ulashish",
+			"xavfsiz fayl almashish"
+		],
+		"openGraph": {
+			"title": "Bulutcha — Bulutdagi Xavfsiz Fayl Saqlash",
+			"description": "Fayllaringizni bulutda saqlang, telefon raqam orqali do'stlaringizga ulashing. 20 GB bepul.",
+			"images": {
+				"alt": "Bulutcha — Bulutdagi Fayl Saqlash Xizmati"
+			}
+		},
+		"twitter": {
+			"title": "Bulutcha — Bulutdagi Xavfsiz Fayl Saqlash",
+			"description": "Fayllaringizni bulutda saqlang va telefon raqam orqali ulashing. 20 GB bepul joy."
+		},
+		"schema": {
+			"description": "Bulutda fayl saqlash va telefon raqam orqali ulashish xizmati",
+			"offers": {
+				"description": "20 GB bepul saqlash joyi"
+			}
+		}
+	},
 	"nav": {
 		"home": "Bosh sahifa",
 		"features": "Imkoniyatlar",
@@ -72,6 +108,7 @@
 			"description": "Fayllarni ulashing va jamoa bilan ishlang."
 		}
 	},
+	"mostPopular": "Eng mashhur",
 	"pricing": {
 		"title": "Oddiy va shaffof narxlar",
 		"subtitle": "O‘zingizga mos tarifni tanlang",

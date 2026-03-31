@@ -15,7 +15,7 @@ export default function ContactForm() {
 
 	const contactSchema = z.object({
 		email: z.string().email(t('validation.email')),
-		subject: z.string().min(3, t('validation.subject')),
+		theme: z.string().min(3, t('validation.subject')),
 		message: z.string().min(10, t('validation.message')),
 	})
 
@@ -36,11 +36,18 @@ export default function ContactForm() {
 	const onSubmit = async (data: ContactFormData) => {
 		setIsLoading(true)
 		try {
-			// Simulate API call
-			await new Promise(resolve => setTimeout(resolve, 1000))
 			setIsSubmitted(true)
-			reset()
-			setTimeout(() => setIsSubmitted(false), 5000)
+			const response = await fetch(
+				`${process.env.NEXT_PUBLIC_API_URL}base/contact/`,
+				{
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(data),
+				},
+			)
+			const responseData = await response.json()
 		} finally {
 			setIsLoading(false)
 		}
@@ -85,7 +92,6 @@ export default function ContactForm() {
 						</motion.div>
 					) : (
 						<form onSubmit={handleSubmit(onSubmit)} className='space-y-6'>
-							{/* Email Field */}
 							<div>
 								<label className='block text-sm font-medium text-foreground mb-2'>
 									{t('email')}
@@ -103,25 +109,23 @@ export default function ContactForm() {
 								)}
 							</div>
 
-							{/* Subject Field */}
 							<div>
 								<label className='block text-sm font-medium text-foreground mb-2'>
 									{t('subject')}
 								</label>
 								<Input
-									{...register('subject')}
+									{...register('theme')}
 									type='text'
 									placeholder={t('placeholders.subject')}
 									className='w-full bg-input border-border text-foreground placeholder:text-muted-foreground'
 								/>
-								{errors.subject && (
+								{errors.theme && (
 									<p className='text-sm text-destructive mt-1'>
-										{errors.subject.message}
+										{errors.theme.message}
 									</p>
 								)}
 							</div>
 
-							{/* Message Field */}
 							<div>
 								<label className='block text-sm font-medium text-foreground mb-2'>
 									{t('message')}
@@ -139,7 +143,6 @@ export default function ContactForm() {
 								)}
 							</div>
 
-							{/* Submit Button */}
 							<motion.button
 								whileHover={{ scale: 1.02 }}
 								whileTap={{ scale: 0.98 }}
