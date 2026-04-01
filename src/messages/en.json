@@ -124,6 +124,7 @@
 			"yearly": "Per year",
 			"lifetime": "Lifetime"
 		},
+		"sum": "sum",
 		"cta": "Choose Plan"
 	},
 	"permissions": {

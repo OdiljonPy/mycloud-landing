@@ -37,7 +37,7 @@ export const PricingCard = ({ plan }: Props) => {
 					<div className='text-4xl font-bold text-foreground'>
 						{plan.price}{' '}
 						<span className='text-lg text-muted-foreground font-normal'>
-							UZD/ {t(`pricing.pricingType.${plan.status}`)}
+							{t('pricing.sum')} / {t(`pricing.pricingType.${plan.status}`)}
 						</span>
 					</div>
 				</div>
