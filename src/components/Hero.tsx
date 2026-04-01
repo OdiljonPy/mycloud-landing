@@ -45,8 +45,8 @@ export default function Hero() {
 					{/* Badge */}
 					<motion.div variants={itemVariants}>
 						<div className='inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full'>
-							<span className='text-sm flex items-center gap-1 font-medium text-primary'>
-								<SparklesIcon size={14} />
+							<span className='text-sm flex flex-col sm:flex-row items-center gap-1 font-medium text-primary'>
+								<SparklesIcon className='size-4 md:size-[14px]' size={14} />
 								{t('banner')}
 							</span>
 						</div>

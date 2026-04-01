@@ -46,8 +46,8 @@ export const PricingTabs = ({ pricing }: Props) => {
 				defaultValue='popular'
 				className='relative z-40 w-full flex flex-col gap-6 justify-center items-center mb-5'
 			>
-				<div className='flex items-center mb-5 w-full justify-center'>
-					<TabsList className='hide-scollbar  flex h-full w-fit items-center justify-start gap-3 rounded-4xl'>
+				<div className='flex  items-center mb-5 w-full justify-center'>
+					<TabsList className='hide-scollbar overflow-x-scroll  flex h-full w-fit items-center justify-start gap-3 rounded-4xl'>
 						{tabs.map(tab => (
 							<TabsTrigger
 								className={cn(
