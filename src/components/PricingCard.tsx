@@ -19,7 +19,7 @@ const itemVariants = {
 export const PricingCard = ({ plan }: Props) => {
 	const t = useTranslations()
 	const formatPrice = (price: number | string) =>
-		price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+		price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 
 	return (
 		<motion.div
