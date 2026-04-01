@@ -62,14 +62,16 @@ export default function Navigation() {
 							transition={{ duration: 0.5 }}
 							className='hidden md:block'
 						>
-							<a href='https://my.bulutcha.com/' target='_blank'>
-								<Button className='bg-primary text-primary-foreground hover:bg-primary/90'>
+							<Button
+								asChild
+								className='bg-primary text-primary-foreground hover:bg-primary/90'
+							>
+								<a href='https://my.bulutcha.com/' target='_blank'>
 									{t('nav.cta')}
-								</Button>
-							</a>
+								</a>
+							</Button>
 						</motion.div>
 
-						{/* Mobile Menu Button */}
 						<button
 							onClick={() => setIsOpen(!isOpen)}
 							className='md:hidden p-2 hover:bg-muted rounded-lg transition-colors'
@@ -102,11 +104,14 @@ export default function Navigation() {
 									{item.label}
 								</a>
 							))}
-							<a href='https://my.bulutcha.com/' target='_blank'>
-								<Button className='w-full bg-primary text-primary-foreground hover:bg-primary/90'>
+							<Button
+								asChild
+								className='w-full bg-primary text-primary-foreground hover:bg-primary/90'
+							>
+								<a href='https://my.bulutcha.com/' target='_blank'>
 									{t('nav.cta')}
-								</Button>
-							</a>
+								</a>
+							</Button>
 						</div>
 					</motion.div>
 				)}

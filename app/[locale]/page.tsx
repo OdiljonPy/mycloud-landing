@@ -7,6 +7,7 @@ import Navigation from '@/src/components/Navigation'
 import Permissions from '@/src/components/Permissions'
 import Pricing from '@/src/components/Pricing'
 import { getPricing } from '@/src/shared/api'
+
 import { getLocale } from 'next-intl/server'
 
 export default async function Page() {

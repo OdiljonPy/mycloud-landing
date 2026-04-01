@@ -8,18 +8,10 @@ import { CheckCircle, Mail } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
+import { ContactFormData, contactSchema } from '../schemas'
 
 export default function ContactForm() {
 	const t = useTranslations('contact')
-
-	const contactSchema = z.object({
-		email: z.string().email(t('validation.email')),
-		theme: z.string().min(3, t('validation.subject')),
-		message: z.string().min(10, t('validation.message')),
-	})
-
-	type ContactFormData = z.infer<typeof contactSchema>
 
 	const [isSubmitted, setIsSubmitted] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
@@ -28,15 +20,13 @@ export default function ContactForm() {
 		register,
 		handleSubmit,
 		formState: { errors },
-		reset,
 	} = useForm<ContactFormData>({
-		resolver: zodResolver(contactSchema),
+		resolver: zodResolver(contactSchema(t)),
 	})
 
 	const onSubmit = async (data: ContactFormData) => {
 		setIsLoading(true)
 		try {
-			setIsSubmitted(true)
 			const response = await fetch(
 				`${process.env.NEXT_PUBLIC_API_URL}base/contact/`,
 				{
@@ -47,7 +37,9 @@ export default function ContactForm() {
 					body: JSON.stringify(data),
 				},
 			)
-			const responseData = await response.json()
+			if (response.ok) {
+				setIsSubmitted(true)
+			}
 		} finally {
 			setIsLoading(false)
 		}

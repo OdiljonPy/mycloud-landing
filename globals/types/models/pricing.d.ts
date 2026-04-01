@@ -3,7 +3,7 @@ interface FeaturesType {
 	feature: string
 }
 
-export interface PricingType {
+interface PricingType {
 	id: number
 	name: string
 	price: string
@@ -11,3 +11,5 @@ export interface PricingType {
 	storage: number
 	features: FeaturesType[]
 }
+
+type PricingResponse = PricingType[]

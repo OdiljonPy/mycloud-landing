@@ -75,15 +75,16 @@ export default function Hero() {
 						variants={itemVariants}
 						className='flex flex-col sm:flex-row gap-4 justify-center items-center'
 					>
-						<a href='https://my.bulutcha.com/' target='_blank'>
-							<Button
-								size='lg'
-								className='bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base gap-2 w-full sm:w-auto'
-							>
+						<Button
+							asChild
+							size='lg'
+							className='bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-base gap-2 w-full sm:w-auto'
+						>
+							<a href='https://my.bulutcha.com/' target='_blank'>
 								{t('cta')}
 								<ArrowRight className='w-5 h-5' />
-							</Button>
-						</a>
+							</a>
+						</Button>
 					</motion.div>
 
 					{/* Stats */}
