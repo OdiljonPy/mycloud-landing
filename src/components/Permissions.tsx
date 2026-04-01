@@ -57,7 +57,7 @@ export default function Permissions() {
 	return (
 		<section
 			id='permissions'
-			className='py-20 px-4 sm:px-6 lg:px-8 bg-background'
+			className='py-20 px-4 sm:px-6 overflow-hidden lg:px-8 bg-background'
 		>
 			<div className='max-w-7xl mx-auto'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
@@ -159,9 +159,9 @@ export default function Permissions() {
 							</div>
 
 							<motion.div
-								animate={{ y: [0, -10, 0] }}
+								animate={{ y: [0, 10, 0] }}
 								transition={{ duration: 3, repeat: Infinity }}
-								className='absolute -top-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-xl font-semibold text-sm'
+								className='absolute -top-4 -right-4  bg-primary text-primary-foreground px-4 py-2 rounded-xl font-semibold text-sm'
 							>
 								{t('document.secureBadge')}
 							</motion.div>
