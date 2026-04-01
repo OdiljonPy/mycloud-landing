@@ -34,7 +34,9 @@ export const PricingTabs = ({ pricing }: Props) => {
 		{ value: 'lifetime', label: t('pricing.type.lifetime') },
 	]
 
-	const pricingItems = pricing.filter(item => item.status === activeTab)
+	const pricingItems = pricing
+		.filter(item => item.status === activeTab)
+		.sort((a, b) => Number(a.price) - Number(b.price))
 
 	return (
 		<>

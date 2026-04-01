@@ -18,6 +18,8 @@ const itemVariants = {
 
 export const PricingCard = ({ plan }: Props) => {
 	const t = useTranslations()
+	const formatPrice = (price: number | string) =>
+		price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 
 	return (
 		<motion.div
@@ -35,7 +37,7 @@ export const PricingCard = ({ plan }: Props) => {
 
 				<div>
 					<div className='text-4xl font-bold text-foreground'>
-						{plan.price}{' '}
+						{formatPrice(plan.price)}{' '}
 						<span className='text-lg text-muted-foreground font-normal'>
 							{t('pricing.sum')} / {t(`pricing.pricingType.${plan.status}`)}
 						</span>
