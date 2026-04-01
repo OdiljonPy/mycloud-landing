@@ -28,7 +28,6 @@ export const PricingTabs = ({ pricing }: Props) => {
 	const [activeTab, setActiveTab] = useState<string>('monthly')
 
 	const tabs = [
-		{ value: 'free', label: t('pricing.type.free') },
 		{ value: 'monthly', label: t('pricing.type.monthly') },
 		{ value: 'yearly', label: t('pricing.type.yearly') },
 		{ value: 'lifetime', label: t('pricing.type.lifetime') },
