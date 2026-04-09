@@ -1,10 +1,13 @@
+import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
-import { CheckIcon } from 'lucide-react'
+import { CircleCheckIcon, CircleMinusIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 interface Props {
-	plan: PricingType
+	plan: PricingType | undefined
 }
 
 const itemVariants = {
@@ -18,48 +21,72 @@ const itemVariants = {
 
 export const PricingCard = ({ plan }: Props) => {
 	const t = useTranslations()
+
 	const formatPrice = (price: number | string) =>
 		price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+	const MotionCard = motion(Card)
+
+	function convertBytes(bytes: number) {
+		const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
+
+		let size = bytes
+		let unitIndex = 0
+
+		while (size >= 1024 && unitIndex < units.length - 1) {
+			size /= 1024
+			unitIndex++
+		}
+
+		return `${size.toFixed(0)} ${units[unitIndex]}`
+	}
 
 	return (
-		<motion.div
-			key={plan.id}
+		<MotionCard
 			variants={itemVariants}
 			whileHover={{ y: -10 }}
-			className={`relative rounded-2xl border transition-all duration-300 border-primary bg-primary/5 ring-2 ring-primary`}
+			className={cn(
+				'transition-all duration-300 h-full',
+				plan?.is_popular && 'border-primary ring-1 ring-primary',
+			)}
 		>
-			<div className='p-8 flex flex-col justify-between h-full gap-6'>
-				<div>
-					<h3 className='text-2xl font-bold text-foreground mb-2'>
-						{plan.name}
-					</h3>
-				</div>
-
-				<div>
-					<div className='text-4xl font-bold text-foreground'>
-						{formatPrice(plan.price)}{' '}
-						<span className='text-lg text-muted-foreground font-normal'>
-							{t('pricing.sum')} / {t(`pricing.pricingType.${plan.status}`)}
-						</span>
+			<CardHeader>
+				<CardTitle className='space-y-4'>
+					<Badge className='block' variant={'default'}>
+						{plan?.name}
+					</Badge>
+					<span className='block'>{convertBytes(plan?.storage ?? 0)}</span>
+					<div className='flex items-center gap-1 flex-wrap'>
+						<h3 className='text-3xl'>
+							{formatPrice(plan?.price ?? 0)} UZS {'/'}
+						</h3>
+						<p className='text-muted-foreground'>
+							{plan?.billing_period === 'free'
+								? t('pricing.pricingType.free')
+								: t(`pricing.pricingType.${plan?.billing_period}`)}
+						</p>
 					</div>
-				</div>
-
-				<div className='space-y-4'>
-					{plan.features.map((feature, idx) => (
+				</CardTitle>
+			</CardHeader>
+			<CardContent className='flex flex-col justify-between gap-4 h-full'>
+				<div className='space-y-4 border-b border-t py-5'>
+					{plan?.items.map((feature, idx) => (
 						<motion.div
 							key={idx}
 							initial={{ opacity: 0, x: -10 }}
 							whileInView={{ opacity: 1, x: 0 }}
 							transition={{ delay: idx * 0.1 }}
 							viewport={{ once: true }}
-							className='flex gap-3 items-start'
+							className='flex gap-2 items-center'
 						>
-							<CheckIcon className='w-5 h-5 text-primary shrink-0 mt-0.5' />
+							{feature.is_available ? (
+								<CircleCheckIcon className='w-5 h-5 text-primary shrink-0 mt-0.5' />
+							) : (
+								<CircleMinusIcon className='w-5 h-5 text-destructive shrink-0 mt-0.5' />
+							)}
 							<span className='text-foreground text-sm'>{feature.feature}</span>
 						</motion.div>
 					))}
 				</div>
-
 				<Button
 					className={`w-full h-11 font-semibold ${
 						true && 'bg-primary text-primary-foreground hover:bg-primary/90'
@@ -71,7 +98,7 @@ export const PricingCard = ({ plan }: Props) => {
 						{t('pricing.cta')}
 					</a>
 				</Button>
-			</div>
-		</motion.div>
+			</CardContent>
+		</MotionCard>
 	)
 }

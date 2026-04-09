@@ -118,6 +118,7 @@
 			"yearly": "Yearly",
 			"lifetime": "Lifetime"
 		},
+		"soon": "Soon",
 		"pricingType": {
 			"free": "Free",
 			"monthly": "Per month",
