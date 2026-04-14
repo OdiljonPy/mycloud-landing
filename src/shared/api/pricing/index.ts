@@ -1,6 +1,6 @@
 export const getPricing = async (locale: string): Promise<PricingResponse> => {
-	const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}base/plan/`, {
-		next: { revalidate: 120 },
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}storage/plan/`, {
+		next: { revalidate: 0 },
 		headers: {
 			'Accept-Language': locale,
 		},
