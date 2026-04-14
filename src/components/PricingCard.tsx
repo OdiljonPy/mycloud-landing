@@ -56,10 +56,9 @@ export const PricingCard = ({ plan }: Props) => {
 					</Badge>
 					<span className='block'>{convertBytes(plan?.storage ?? 0)}</span>
 					<div className='flex items-center gap-1 flex-wrap'>
-						<h3 className='text-3xl'>
-							{formatPrice(plan?.price ?? 0)} UZS {'/'}
-						</h3>
+						<h3 className='text-3xl'>{formatPrice(plan?.price ?? 0)} UZS</h3>
 						<p className='text-muted-foreground'>
+							{'/'}
 							{plan?.billing_period &&
 								(plan?.billing_period === 'free'
 									? t('pricing.pricingType.free')
