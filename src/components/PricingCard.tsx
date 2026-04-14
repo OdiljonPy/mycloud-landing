@@ -60,9 +60,10 @@ export const PricingCard = ({ plan }: Props) => {
 							{formatPrice(plan?.price ?? 0)} UZS {'/'}
 						</h3>
 						<p className='text-muted-foreground'>
-							{plan?.billing_period === 'free'
-								? t('pricing.pricingType.free')
-								: t(`pricing.pricingType.${plan?.billing_period}`)}
+							{plan?.billing_period &&
+								(plan?.billing_period === 'free'
+									? t('pricing.pricingType.free')
+									: t(`pricing.pricingType.${plan?.billing_period}`))}
 						</p>
 					</div>
 				</CardTitle>
