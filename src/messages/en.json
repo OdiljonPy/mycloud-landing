@@ -120,7 +120,7 @@
 		},
 		"soon": "Soon",
 		"pricingType": {
-			"free": "Free",
+			"free": "Lifetime",
 			"monthly": "Per month",
 			"yearly": "Per year",
 			"lifetime": "Lifetime"

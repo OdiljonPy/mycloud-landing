@@ -19,6 +19,13 @@ interface Props {
 	pricing: PricingType[]
 }
 
+const gridColsMap: Record<number, string> = {
+	1: 'lg:grid-cols-1',
+	2: 'sm:grid-cols-2',
+	3: 'sm:grid-cols-2 lg:grid-cols-3',
+	4: 'sm:grid-cols-2 lg:grid-cols-4',
+	5: 'sm:grid-cols-2 lg:grid-cols-5',
+}
 const containerVariants = {
 	hidden: { opacity: 0 },
 	visible: {
@@ -104,13 +111,17 @@ export const PricingTabs = ({ pricing }: Props) => {
 				</div>
 
 				{tabs.map(tab => (
-					<TabsContent key={tab.value} className='w-full' value={tab.value}>
+					<TabsContent key={tab.value} className='w-full ' value={tab.value}>
 						<motion.div
 							variants={containerVariants}
 							initial='hidden'
 							whileInView='visible'
 							viewport={{ once: true }}
-							className={`grid grid-cols-1  lg:grid-cols-${pricingItems.length + 1} gap-8`}
+							className={cn(
+								'grid grid-cols-1 gap-8',
+								gridColsMap[pricingItems.length + 1] ??
+									'sm:grid-cols-2 lg:grid-cols-3',
+							)}
 						>
 							{[pricingFreeFind, ...pricingItems].map((item, index) => (
 								<PricingCard plan={item} key={index} />
