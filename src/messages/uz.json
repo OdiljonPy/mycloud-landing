@@ -46,12 +46,12 @@
 	"hero": {
 		"banner": "Xavfsiz bulutli xotira doimo yoningizda",
 		"title": "Fayllaringiz — bulutda xavfsiz",
-		"subtitle": "20GB bepul xotira bilan qulay fayl boshqaruvi. Fayllarni oson ulashing va ruxsatlarni boshqaring.",
+		"subtitle": "10GB bepul xotira bilan qulay fayl boshqaruvi. Fayllarni oson ulashing va ruxsatlarni boshqaring.",
 		"cta": "Bepul boshlash",
 		"secondaryCta": "Batafsil",
 		"stats": {
 			"storage": {
-				"title": "20GB",
+				"title": "10GB",
 				"subtitle": "Bepul xotira"
 			},
 			"security": {
@@ -68,7 +68,7 @@
 		"title": "Asosiy imkoniyatlar",
 		"subtitle": "Fayllarni boshqarish uchun kerakli barcha funksiyalar",
 		"storage": {
-			"title": "20GB bepul xotira",
+			"title": "10GB bepul xotira",
 			"description": "Muhim fayl va hujjatlaringiz uchun keng bepul joy bilan boshlang."
 		},
 		"sharing": {
