@@ -97,7 +97,10 @@ export const PricingCard = ({ plan }: Props) => {
 					variant={'outline'}
 					asChild
 				>
-					<a href='https://my.bulutcha.com/' target='_blank'>
+					<a
+						href={`https://my.bulutcha.com/home/?choose=${plan?.id}"`}
+						target='_blank'
+					>
 						{t('pricing.cta')}
 					</a>
 				</Button>
