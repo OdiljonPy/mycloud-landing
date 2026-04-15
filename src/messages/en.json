@@ -46,12 +46,12 @@
 	"hero": {
 		"banner": "Secure Cloud Storage at Your Fingertips",
 		"title": "Your Files, Securely in the Cloud",
-		"subtitle": "Experience seamless file management with 20GB of free storage. Share files effortlessly with permission control.",
+		"subtitle": "Experience seamless file management with 10GB of free storage. Share files effortlessly with permission control.",
 		"cta": "Get Started",
 		"secondaryCta": "Learn More",
 		"stats": {
 			"storage": {
-				"title": "20GB",
+				"title": "10GB",
 				"subtitle": "Free Storage"
 			},
 			"security": {
@@ -68,7 +68,7 @@
 		"title": "Powerful Features",
 		"subtitle": "Everything you need for seamless file management",
 		"storage": {
-			"title": "20GB Free Storage",
+			"title": "10GB Free Storage",
 			"description": "Get started with generous free storage for all your important files and documents."
 		},
 		"sharing": {
