@@ -9,7 +9,7 @@ next.user-config.*
 
 # Environment variables
 .env
-.env.*
+.env
 .env*.local
 .env.local
 .env.development
@@ -19,3 +19,8 @@ next.user-config.*
 node_modules
 .next/
 .DS_Store
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/mycloud-landing.iml
+/.idea/vcs.xml

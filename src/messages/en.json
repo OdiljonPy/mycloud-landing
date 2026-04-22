@@ -172,6 +172,7 @@
 		}
 	},
 	"footer": {
+		"offerta": "Offer",
 		"allRights": "All rights reserved.",
 		"developmentBy": "Development by:",
 		"description": "Secure cloud storage with intelligent permission control and real-time collaboration.",

@@ -1,193 +1,194 @@
 {
-	"meta": {
-		"title": {
-			"default": "Bulutcha — Bulutchadagi Xavfsiz Fayl Saqlash",
-			"template": "%s | Bulutcha"
-		},
-		"description": "Bulutcha — fayllaringizni bulutda saqlash, rasm va videolarni ulashish uchun qulay platforma. 20 GB bepul joy. Telefon raqam orqali ruxsat bering.",
-		"keywords": [
-			"bulut saqlash",
-			"fayl saqlash",
-			"bulutcha",
-			"google drive alternativa",
-			"rasm saqlash",
-			"video saqlash",
-			"online disk",
-			"o'zbekiston cloud",
-			"telefon raqam bilan ulashish",
-			"xavfsiz fayl almashish"
-		],
-		"openGraph": {
-			"title": "Bulutcha — Bulutdagi Xavfsiz Fayl Saqlash",
-			"description": "Fayllaringizni bulutda saqlang, telefon raqam orqali do'stlaringizga ulashing. 20 GB bepul.",
-			"images": {
-				"alt": "Bulutcha — Bulutdagi Fayl Saqlash Xizmati"
-			}
-		},
-		"twitter": {
-			"title": "Bulutcha — Bulutdagi Xavfsiz Fayl Saqlash",
-			"description": "Fayllaringizni bulutda saqlang va telefon raqam orqali ulashing. 20 GB bepul joy."
-		},
-		"schema": {
-			"description": "Bulutda fayl saqlash va telefon raqam orqali ulashish xizmati",
-			"offers": {
-				"description": "20 GB bepul saqlash joyi"
-			}
-		}
-	},
-	"nav": {
-		"home": "Bosh sahifa",
-		"features": "Imkoniyatlar",
-		"pricing": "Narxlar",
-		"permissions": "Ruxsatlar",
-		"contact": "Aloqa",
-		"cta": "Boshlash"
-	},
-	"hero": {
-		"banner": "Xavfsiz bulutli xotira doimo yoningizda",
-		"title": "Fayllaringiz — bulutda xavfsiz",
-		"subtitle": "10GB bepul xotira bilan qulay fayl boshqaruvi. Fayllarni oson ulashing va ruxsatlarni boshqaring.",
-		"cta": "Bepul boshlash",
-		"secondaryCta": "Batafsil",
-		"stats": {
-			"storage": {
-				"title": "10GB",
-				"subtitle": "Bepul xotira"
-			},
-			"security": {
-				"title": "End-to-End",
-				"subtitle": "shifrlash"
-			},
-			"sync": {
-				"title": "Real vaqt",
-				"subtitle": "sinxronizatsiya"
-			}
-		}
-	},
-	"features": {
-		"title": "Asosiy imkoniyatlar",
-		"subtitle": "Fayllarni boshqarish uchun kerakli barcha funksiyalar",
-		"storage": {
-			"title": "10GB bepul xotira",
-			"description": "Muhim fayl va hujjatlaringiz uchun keng bepul joy bilan boshlang."
-		},
-		"sharing": {
-			"title": "Oson ulashish",
-			"description": "Fayllarni telefon raqami orqali ulashing va ruxsatlarni boshqaring."
-		},
-		"security": {
-			"title": "Kuchli xavfsizlik",
-			"description": "End-to-end shifrlash fayllaringizni doimo himoya qiladi."
-		},
-		"sync": {
-			"title": "Real vaqt sinxronizatsiyasi",
-			"description": "Fayllaringiz barcha qurilmalarda avtomatik yangilanib boradi."
-		},
-		"collab": {
-			"title": "Hamkorlik",
-			"description": "Jamoa bilan real vaqt rejimida birga ishlang."
-		},
-		"mobile": {
-			"title": "Mobil qulaylik",
-			"description": "Istalgan joydan, istalgan qurilmadan fayllaringizga kiring."
-		}
-	},
-	"howItWorks": {
-		"title": "Qanday ishlaydi",
-		"subtitle": "Boshlash uchun 3 oddiy qadam",
-		"step1": {
-			"title": "Roʻyxatdan oʻtish",
-			"description": "Telefon raqamingiz orqali akkaunt yarating."
-		},
-		"step2": {
-			"title": "Fayl yuklash",
-			"description": "Fayllarni sudrab olib keling yoki yuklash tugmasidan foydalaning."
-		},
-		"step3": {
-			"title": "Ulashish va hamkorlik",
-			"description": "Fayllarni ulashing va jamoa bilan ishlang."
-		}
-	},
-	"mostPopular": "Eng mashhur",
-	"pricing": {
-		"title": "Oddiy va shaffof narxlar",
-		"subtitle": "O‘zingizga mos tarifni tanlang",
-		"type": {
-			"free": "Bepul",
-			"monthly": "Oylik",
-			"yearly": "Yillik",
-			"lifetime": "Bir umrlik"
-		},
-		"soon": "Tez orada",
-		"pricingType": {
-			"free": "Umrbod",
-			"monthly": "Oyiga",
-			"yearly": "Yiliga",
-			"lifetime": "Umrbod"
-		},
-		"sum": "so'm",
-		"cta": "Tarifni tanlash"
-	},
-	"permissions": {
-		"title": "Aqlli ruxsat boshqaruvi",
-		"subtitle": "Fayllarni o‘zingiz xohlagan tarzda ulashing",
-		"description": "Foydalanuvchilar fayllar bilan nima qila olishini to‘liq nazorat qiling: yuklab olishni cheklang, amal qilish muddatini belgilang va istalgan payt ruxsatni bekor qiling.",
-		"features": {
-			"view_only": "Faqat ko'rish huquqi",
-			"edit_permissions": "Tahrirlash ruxsatnomalari",
-			"download_controls": "Yuklab olishni boshqarish",
-			"expiration_dates": "Amal qilish muddati",
-			"password_protection": "Parol bilan himoyalash",
-			"activity_tracking": "Harakatlar tarixi"
-		},
-		"document": {
-			"sharedWith": "John bilan ulashilgan",
-			"viewOnly": "Faqat ko‘rish huquqi",
-			"expires": "7 kundan keyin muddati tugaydi",
-			"password": "Parol bilan himoyalangan",
-			"lastAccessed": "Oxirgi kirish 2 soat oldin",
-			"secureBadge": "100% Xavfsiz"
-		}
-	},
-	"contact": {
-		"title": "Biz bilan bog‘laning",
-		"subtitle": "Sizdan xabar kutamiz",
-		"email": "Email",
-		"subject": "Mavzu",
-		"message": "Xabar",
-		"send": "Yuborish",
-		"sending": "Yuborilmoqda...",
-		"success": "Xabar muvaffaqiyatli yuborildi!",
-		"error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
-		"success_message": "Tez orada siz bilan bog'lanamiz!",
-		"placeholders": {
-			"email": "siz@misol.uz",
-			"subject": "Sizga qanday yordam bera olamiz?",
-			"message": "Batafsilroq yozing..."
-		},
-		"validation": {
-			"email": "Yaroqsiz email manzili",
-			"subject": "Mavzu kamida 3 ta belgidan iborat bo'lishi kerak",
-			"message": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak"
-		}
-	},
-	"footer": {
-		"allRights": "Barcha huquqlar himoyalangan.",
-		"developmentBy": "Ishlab chiqdi:",
-		"description": "Aqlli ruxsat boshqaruvi va real vaqt hamkorligi bilan xavfsiz bulutli xotira.",
-		"product": "Mahsulot",
-		"features": "Imkoniyatlar",
-		"pricing": "Narxlar",
-		"permissions": "Ruxsatlar",
-		"company": "Kompaniya",
-		"about": "Biz haqimizda",
-		"blog": "Blog",
-		"careers": "Karyera",
-		"support": "Qo‘llab-quvvatlash",
-		"help": "Yordam markazi",
-		"contact": "Aloqa",
-		"terms": "Shartlar",
-		"privacy": "Maxfiylik siyosati",
-		"copyright": "© 2024 Cloud. Barcha huquqlar himoyalangan."
-	}
+  "meta": {
+    "title": {
+      "default": "Bulutcha — Bulutchadagi Xavfsiz Fayl Saqlash",
+      "template": "%s | Bulutcha"
+    },
+    "description": "Bulutcha — fayllaringizni bulutda saqlash, rasm va videolarni ulashish uchun qulay platforma. 20 GB bepul joy. Telefon raqam orqali ruxsat bering.",
+    "keywords": [
+      "bulut saqlash",
+      "fayl saqlash",
+      "bulutcha",
+      "google drive alternativa",
+      "rasm saqlash",
+      "video saqlash",
+      "online disk",
+      "o'zbekiston cloud",
+      "telefon raqam bilan ulashish",
+      "xavfsiz fayl almashish"
+    ],
+    "openGraph": {
+      "title": "Bulutcha — Bulutdagi Xavfsiz Fayl Saqlash",
+      "description": "Fayllaringizni bulutda saqlang, telefon raqam orqali do'stlaringizga ulashing. 20 GB bepul.",
+      "images": {
+        "alt": "Bulutcha — Bulutdagi Fayl Saqlash Xizmati"
+      }
+    },
+    "twitter": {
+      "title": "Bulutcha — Bulutdagi Xavfsiz Fayl Saqlash",
+      "description": "Fayllaringizni bulutda saqlang va telefon raqam orqali ulashing. 20 GB bepul joy."
+    },
+    "schema": {
+      "description": "Bulutda fayl saqlash va telefon raqam orqali ulashish xizmati",
+      "offers": {
+        "description": "20 GB bepul saqlash joyi"
+      }
+    }
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "features": "Imkoniyatlar",
+    "pricing": "Narxlar",
+    "permissions": "Ruxsatlar",
+    "contact": "Aloqa",
+    "cta": "Boshlash"
+  },
+  "hero": {
+    "banner": "Xavfsiz bulutli xotira doimo yoningizda",
+    "title": "Fayllaringiz — bulutda xavfsiz",
+    "subtitle": "10GB bepul xotira bilan qulay fayl boshqaruvi. Fayllarni oson ulashing va ruxsatlarni boshqaring.",
+    "cta": "Bepul boshlash",
+    "secondaryCta": "Batafsil",
+    "stats": {
+      "storage": {
+        "title": "10GB",
+        "subtitle": "Bepul xotira"
+      },
+      "security": {
+        "title": "End-to-End",
+        "subtitle": "shifrlash"
+      },
+      "sync": {
+        "title": "Real vaqt",
+        "subtitle": "sinxronizatsiya"
+      }
+    }
+  },
+  "features": {
+    "title": "Asosiy imkoniyatlar",
+    "subtitle": "Fayllarni boshqarish uchun kerakli barcha funksiyalar",
+    "storage": {
+      "title": "10GB bepul xotira",
+      "description": "Muhim fayl va hujjatlaringiz uchun keng bepul joy bilan boshlang."
+    },
+    "sharing": {
+      "title": "Oson ulashish",
+      "description": "Fayllarni telefon raqami orqali ulashing va ruxsatlarni boshqaring."
+    },
+    "security": {
+      "title": "Kuchli xavfsizlik",
+      "description": "End-to-end shifrlash fayllaringizni doimo himoya qiladi."
+    },
+    "sync": {
+      "title": "Real vaqt sinxronizatsiyasi",
+      "description": "Fayllaringiz barcha qurilmalarda avtomatik yangilanib boradi."
+    },
+    "collab": {
+      "title": "Hamkorlik",
+      "description": "Jamoa bilan real vaqt rejimida birga ishlang."
+    },
+    "mobile": {
+      "title": "Mobil qulaylik",
+      "description": "Istalgan joydan, istalgan qurilmadan fayllaringizga kiring."
+    }
+  },
+  "howItWorks": {
+    "title": "Qanday ishlaydi",
+    "subtitle": "Boshlash uchun 3 oddiy qadam",
+    "step1": {
+      "title": "Roʻyxatdan oʻtish",
+      "description": "Telefon raqamingiz orqali akkaunt yarating."
+    },
+    "step2": {
+      "title": "Fayl yuklash",
+      "description": "Fayllarni sudrab olib keling yoki yuklash tugmasidan foydalaning."
+    },
+    "step3": {
+      "title": "Ulashish va hamkorlik",
+      "description": "Fayllarni ulashing va jamoa bilan ishlang."
+    }
+  },
+  "mostPopular": "Eng mashhur",
+  "pricing": {
+    "title": "Oddiy va shaffof narxlar",
+    "subtitle": "O‘zingizga mos tarifni tanlang",
+    "type": {
+      "free": "Bepul",
+      "monthly": "Oylik",
+      "yearly": "Yillik",
+      "lifetime": "Bir umrlik"
+    },
+    "soon": "Tez orada",
+    "pricingType": {
+      "free": "Umrbod",
+      "monthly": "Oyiga",
+      "yearly": "Yiliga",
+      "lifetime": "Umrbod"
+    },
+    "sum": "so'm",
+    "cta": "Tarifni tanlash"
+  },
+  "permissions": {
+    "title": "Aqlli ruxsat boshqaruvi",
+    "subtitle": "Fayllarni o‘zingiz xohlagan tarzda ulashing",
+    "description": "Foydalanuvchilar fayllar bilan nima qila olishini to‘liq nazorat qiling: yuklab olishni cheklang, amal qilish muddatini belgilang va istalgan payt ruxsatni bekor qiling.",
+    "features": {
+      "view_only": "Faqat ko'rish huquqi",
+      "edit_permissions": "Tahrirlash ruxsatnomalari",
+      "download_controls": "Yuklab olishni boshqarish",
+      "expiration_dates": "Amal qilish muddati",
+      "password_protection": "Parol bilan himoyalash",
+      "activity_tracking": "Harakatlar tarixi"
+    },
+    "document": {
+      "sharedWith": "John bilan ulashilgan",
+      "viewOnly": "Faqat ko‘rish huquqi",
+      "expires": "7 kundan keyin muddati tugaydi",
+      "password": "Parol bilan himoyalangan",
+      "lastAccessed": "Oxirgi kirish 2 soat oldin",
+      "secureBadge": "100% Xavfsiz"
+    }
+  },
+  "contact": {
+    "title": "Biz bilan bog‘laning",
+    "subtitle": "Sizdan xabar kutamiz",
+    "email": "Email",
+    "subject": "Mavzu",
+    "message": "Xabar",
+    "send": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "success": "Xabar muvaffaqiyatli yuborildi!",
+    "error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
+    "success_message": "Tez orada siz bilan bog'lanamiz!",
+    "placeholders": {
+      "email": "siz@misol.uz",
+      "subject": "Sizga qanday yordam bera olamiz?",
+      "message": "Batafsilroq yozing..."
+    },
+    "validation": {
+      "email": "Yaroqsiz email manzili",
+      "subject": "Mavzu kamida 3 ta belgidan iborat bo'lishi kerak",
+      "message": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak"
+    }
+  },
+  "footer": {
+    "offerta": "Shartnoma",
+    "allRights": "Barcha huquqlar himoyalangan.",
+    "developmentBy": "Ishlab chiqdi:",
+    "description": "Aqlli ruxsat boshqaruvi va real vaqt hamkorligi bilan xavfsiz bulutli xotira.",
+    "product": "Mahsulot",
+    "features": "Imkoniyatlar",
+    "pricing": "Narxlar",
+    "permissions": "Ruxsatlar",
+    "company": "Kompaniya",
+    "about": "Biz haqimizda",
+    "blog": "Blog",
+    "careers": "Karyera",
+    "support": "Qo‘llab-quvvatlash",
+    "help": "Yordam markazi",
+    "contact": "Aloqa",
+    "terms": "Shartlar",
+    "privacy": "Maxfiylik siyosati",
+    "copyright": "© 2024 Cloud. Barcha huquqlar himoyalangan."
+  }
 }
