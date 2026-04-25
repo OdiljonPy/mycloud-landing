@@ -48,7 +48,7 @@ export default function Footer() {
                     link: '#contact',
                 },
                 {
-                    name: 'offerta',
+                    name: 'privacy',
                     link: '/offerta',
                 }
             ],

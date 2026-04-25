@@ -12,14 +12,11 @@ const Offerta = () => {
     const content = getOffertaContent(locale)
     const [activeTab, setActiveTab] = useState(content.documents[0].id)
     const [showScrollTop, setShowScrollTop] = useState(false)
+    const hasMultipleDocuments = content.documents.length > 1
 
     useEffect(() => {
         window.scrollTo({top: 0, behavior: 'auto'})
-
-        const onScroll = () => {
-            setShowScrollTop(window.scrollY > 280)
-        }
-
+        const onScroll = () => setShowScrollTop(window.scrollY > 280)
         onScroll()
         window.addEventListener('scroll', onScroll)
         return () => window.removeEventListener('scroll', onScroll)
@@ -35,35 +32,37 @@ const Offerta = () => {
 
                 <Tabs value={activeTab} onValueChange={value => setActiveTab(value as typeof activeTab)}
                       className='relative z-40 w-full flex flex-col gap-6'>
-                    <div className='flex items-center w-full justify-center'>
-                        <TabsList
-                            className='hide-scollbar overflow-x-scroll flex h-full w-fit items-center justify-start gap-3 rounded-4xl'>
-                            {content.documents.map(doc =>
-                                activeTab === doc.id ? (
-                                    <TabsTrigger
-                                        className={cn('font-regular relative cursor-pointer bg-none px-4 py-2 text-sm sm:text-base')}
-                                        key={doc.id}
-                                        value={doc.id}
-                                    >
-                                        <motion.div
-                                            layoutId='activeTabBackground'
-                                            className='bg-primary border-border/20 absolute inset-0 rounded-4xl border'
-                                            transition={{type: 'spring', stiffness: 500, damping: 30}}
-                                        />
-                                        <span className='relative z-20 text-white'>{doc.tabLabel}</span>
-                                    </TabsTrigger>
-                                ) : (
-                                    <TabsTrigger
-                                        className={cn('font-regular relative cursor-pointer bg-none px-4 py-2 text-sm sm:text-base')}
-                                        key={doc.id}
-                                        value={doc.id}
-                                    >
-                                        <span className='relative z-20 text-black'>{doc.tabLabel}</span>
-                                    </TabsTrigger>
-                                ),
-                            )}
-                        </TabsList>
-                    </div>
+                    {hasMultipleDocuments ? (
+                        <div className='flex items-center w-full justify-center'>
+                            <TabsList
+                                className='hide-scollbar overflow-x-scroll flex h-full w-fit items-center justify-start gap-3 rounded-4xl'>
+                                {content.documents.map(doc =>
+                                    activeTab === doc.id ? (
+                                        <TabsTrigger
+                                            className={cn('font-regular relative cursor-pointer bg-none px-4 py-2 text-sm sm:text-base')}
+                                            key={doc.id}
+                                            value={doc.id}
+                                        >
+                                            <motion.div
+                                                layoutId='activeTabBackground'
+                                                className='bg-primary border-border/20 absolute inset-0 rounded-4xl border'
+                                                transition={{type: 'spring', stiffness: 500, damping: 30}}
+                                            />
+                                            <span className='relative z-20 text-white'>{doc.tabLabel}</span>
+                                        </TabsTrigger>
+                                    ) : (
+                                        <TabsTrigger
+                                            className={cn('font-regular relative cursor-pointer bg-none px-4 py-2 text-sm sm:text-base')}
+                                            key={doc.id}
+                                            value={doc.id}
+                                        >
+                                            <span className='relative z-20 text-black'>{doc.tabLabel}</span>
+                                        </TabsTrigger>
+                                    ),
+                                )}
+                            </TabsList>
+                        </div>
+                    ) : null}
 
                     {content.documents.map(doc => (
                         <TabsContent key={doc.id} value={doc.id} className='w-full'>
